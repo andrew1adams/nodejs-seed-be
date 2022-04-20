@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server/server.ts",
     "eslint": "eslint 'src/**/*'",
-    "eslint:fix": "eslint 'src/**/*' --fix"
+    "eslint:fix": "eslint 'src/**/*' --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
