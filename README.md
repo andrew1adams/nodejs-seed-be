@@ -11,3 +11,15 @@ Libraries e Frameworks:
 - [Husky](https://typicode.github.io/husky/#/)
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [CommitLint](https://commitlint.js.org/#/)
+
+<br/>
+
+# Getting Stared ~
+
+Parabéns, você já está no caminho para começar a criar um projeto NodeJS com o Clean Seed. Para começar execute no terminal, dentro da pasta raiz do projeto o comando:
+
+```bash
+  npm i && npm run prepare
+```
+
+Com o comando acima você instalará todas as dependências necessárias para o projeto. E também habilitará os `git-hooks` dentro do seu repo local.
