@@ -1,7 +1,6 @@
-import express from 'express'
+import { app, PORT } from '~/server/app'
 
-const app = express()
-
-app.use(express.json())
-
-app.listen(3333, () => console.log('Server is Running!'))
+app.listen(PORT, () => {
+  console.log(`Server running on: http://localhost:${PORT}`)
+  console.log(`Swagger UI running on: http://localhost:${PORT}/api-docs`)
+})
