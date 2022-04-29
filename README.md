@@ -11,6 +11,9 @@ Libraries e Frameworks:
 - [Husky](https://typicode.github.io/husky/#/)
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [CommitLint](https://commitlint.js.org/#/)
+- [Swagger](https://swagger.io/)
+
+
 
 <br/>
 
@@ -23,3 +26,15 @@ Parabéns, você já está no caminho para começar a criar um projeto NodeJS co
 ```
 
 Com o comando acima você instalará todas as dependências necessárias para o projeto. E também habilitará os `git-hooks` dentro do seu repo local.
+
+<br/>
+
+# Gerador de Swagger API Docs ~
+
+Para gerar uma documentação para sua API com o `swagger` basta executar o seguinte comando em seu terminal:
+
+```bash
+  npm run docs:gen
+```
+
+Obs: Será necessário apenas apontar o caminho da sua rota principal para gerar o documentação. Essa edição será aplicada no arquivo `swagger/swagger.ts - Ln 15 | Col 27` e o script se encarregará do resto.
