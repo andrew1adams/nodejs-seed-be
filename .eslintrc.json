@@ -19,9 +19,11 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "import-helpers"
   ],
   "rules": {
+    "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "no-console": "off",
     "import/extensions": [
@@ -29,6 +31,14 @@
       "ignorePackages",
       {
         "ts": "never"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": ["/^express$/", "/express/", "module", "/^~\//", ["parent", "sibling", "index"]],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ]
   },
