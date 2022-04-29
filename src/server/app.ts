@@ -12,18 +12,7 @@ app.use(express.json())
 app.use('/api-docs', swagger.serve, swagger.setup(swaggerAPI))
 
 app.get('/', (_req, res) => {
-  res.send('Hello World!')
-})
-
-app.post('/', (_req, res) => {
-  res.send('Hello World!')
-})
-
-app.patch('/', (_req, res) => {
-  res.send('Hello World!')
-})
-app.patch('/as', (_req, res) => {
-  res.send('Hello World!')
+  res.status(200).send({ message: 'Hello World!' })
 })
 
 export { app, PORT }
